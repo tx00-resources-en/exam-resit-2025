@@ -6,18 +6,18 @@
 
 This exam revolves around modifying a Book App, with both frontend and backend components provided. The **GET** routes are public, while the **POST**, **PUT**, and **DELETE** routes are protected. Functional tests are also included.
 
-The exam is worth 350 points, distributed across **seven** iterations as follows:
-- Iteration 1: **30 points**
-- Iteration 2: **70 points**
+The exam is worth 300 points, distributed across **six** iterations as follows:
+- Iteration 1: **50 points**
+- Iteration 2: **50 points**
 - Iteration 3: **50 points**
 - Iteration 4: **50 points**
 - Iteration 5: **50 points**
 - Iteration 6: **50 points**
-- Iteration 7: **50 points**
+
 
 - Note: 
   - The last commit must be made within 3 hours of starting the exam.
-  - Please use a separate branch for iteration 5, 6, and 7.
+  - Please use a separate branch for iteration 5 and 6.
 
 ---
 
@@ -98,7 +98,6 @@ const bookSchema = new mongoose.Schema({
    - In the commit message, *indicate whether the code is fully functional or if there are any remaining issues*.
    - Push the changes to GitHub.
 
-
 ---
 
 ## Iteration 3: **50 points**
@@ -134,34 +133,14 @@ Update the test cases to match the modified models.
    - In the commit message, indicate whether the code is fully functional or if there are any remaining issues.
    - Push the changes to GitHub.
    
+
 ---
 
 ## Iteration 5: **50 points**
 
-Refactor the frontend to use the Context API.
-
-1. Based on the `main` branch, create a new branch with a descriptive name.
-
-2. **Implement `AuthContext`:**
-   - Create an `AuthContext` that manages authentication-related state.
-   - Provide the `AuthContext` to the entire application by wrapping the necessary components in the context provider.
-   - Ensure that components that need authentication information or actions consume the context properly.
-
-3. **Test the implementation:**
-   - Verify that the `AuthContext` works as expected across the app (e.g., logging in, logging out, accessing protected routes).
-
-4. **Commit and push changes:**
-   - After implementing and testing, commit with a descriptive message and push the changes to GitHub.
-   - In the commit message, mention whether the code is fully functional or if there are any remaining issues.
-   - Push the branch to GitHub.
-   
----
-
-## Iteration 6: **50 points**
-
 Refactor `AddBookPage` to Use `useField` Hook
 
-1.  Based on the previous branch, create a new branch with a descriptive name.
+1. Based on the `main` branch, create a new branch with a descriptive name.
 
 2. **Refactor `AddBookPage.jsx`:**
    - In the file `frontend/src/pages/AddBookPage.jsx`, replace the current state hook usage for form fields with the `useField` hook from `frontend/src/hooks/useField.jsx`.
@@ -177,7 +156,7 @@ Refactor `AddBookPage` to Use `useField` Hook
    
 ---
 
-## Iteration 7: **50 points**
+## Iteration 6: **50 points**
 
 1. Based on the previous branch, create a new branch with a descriptive name.
 
@@ -190,3 +169,27 @@ Refactor `AddBookPage` to Use `useField` Hook
    - After fixing the issue, commit with a descriptive message.
    - In the commit message, specify whether the issue is fully resolved or if there are any remaining concerns.
    - Push the branch to GitHub.
+
+<!-- 
+
+---
+
+## Bonus Iteration 7: **20 points**
+
+Refactor the frontend to use the Context API.
+
+1. Based on the previous branch, create a new branch with a descriptive name.
+
+2. **Implement `AuthContext`:**
+   - Create an `AuthContext` that manages authentication-related state.
+   - Provide the `AuthContext` to the entire application by wrapping the necessary components in the context provider.
+   - Ensure that components that need authentication information or actions consume the context properly.
+
+3. **Test the implementation:**
+   - Verify that the `AuthContext` works as expected across the app (e.g., logging in, logging out, accessing protected routes).
+
+4. **Commit and push changes:**
+   - After implementing and testing, commit with a descriptive message and push the changes to GitHub.
+   - In the commit message, mention whether the code is fully functional or if there are any remaining issues.
+   - Push the branch to GitHub.
+-->
